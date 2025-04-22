@@ -1,11 +1,14 @@
 # DSC 106 Visualizations
 The following are some of the visualizations I've made for DSC 106 at UCSD.  
   
-Grocery DB:  
+## Grocery DB  
 ![Barplot of mean Food Processing Score by category](/Grocery_DB/generalized_categories.png)
 
 When you pick up some brownies at your local Target, how processed is it? My goal with this visualization is to give grocery shoppers an idea of how processed the items they’re buying are, and by proxy how healthy it is. To accomplish this, I’ve made a barplot of the average food processing score of each general category. At first, I had a boxplot of every category in the dataset, but I realized it was too granular and too much information. So I re-categorized the food items into more general and less granular “super”-categories. For example, cheese, yogurt, and milk all go to ‘Dairy Products’. I also opted for a barplot of average values because it makes it quicker/easier for viewers to immediately compare “typical” values of each category by visually comparing the length and position of the bars.
+
 I sorted the bars from least to most processed so viewers can more easily compare food processing scores across all the categories without going back and forth. I also gave the bars a gradient color such that the less processed categories are blue, and as you get to more processed categories, it gradually turns red. This way, viewers can compare food processing score rankings by both bar length and color, making the information even more digestible. 
+
 I also added a vertical line marking the overall mean food processing score. This is so that viewers can easily get an idea of how each category’s processing score compares to overall processing score i.e. “Is the food processing score of Dairy Products typical or much lower than what we’d expect?”.  Viewers can see that baked goods, snacks & sweets, and prepared foods have a higher food processing score than the overall average. They can also see that foods in American grocery stores are highly processed overall. I also made the color of this vertical line gray, slightly transparent, and dashed instead of solid so that it doesn’t interfere too much with the actual barplot. 
+
 Finally, I added some annotations to emphasize the key points I wanted to make. I experimented with 2 versions of the plot: having the key points annotated beside the bar vs in a white box on the top right. I showed the first and second plot to 2 different groups of 4 people for 10 seconds and then asked them what were the key points they remember from the plot. Even though I personally think the box looks better, the annotation besides the bar performed better. After asking my friends for their opinion, it seems to be because most people skip reading the box in the top right, while with the annotation besides the bar their eyes are naturally drawn to read the text as they look through the bar plot. 
 
