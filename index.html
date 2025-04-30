@@ -148,26 +148,64 @@
         Persuasive or Deceptive Visualization?
       </h1>
 
-      <p><strong>Your Name</strong> — <em>Your UCSD Email Address</em></p>
+      <p><strong>Daniel Budidharma</strong> — <em>vbudidharma@ucsd.edu</em></p>
     </header>
 
     <main>
-      <h2>Proposition: [STATE PROPOSITION]</h2>
+      <h2>Proposition: <br>
+        Democratic Party Presidents lead to higher American GDP growth rates</h2>
 
       <section>
         <h3>FOR the Proposition</h3>
 
         <figure>
-          <img src="IMAGE_FILENAME" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <img src="Proj_2\GDP growth rate Dem.svg" alt=""></img>
+          <figcaption>Mean GDP growth rate by President (1961-2020)</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
 
         <ul>
-          <li>RATIONALE_1</li>
-          <li>RATIONALE_2</li>
-          <li>RATIONALE_3</li>
+          <li>Data Transformations: I assigned each year in the "economy and growth" dataset from The World Bank to a president and their political party, 
+            then I grouped by each president and calculated the mean GDP growth rate of each of their terms. For example, if GDP growth rate in 
+            1989, 1990, 1991, 1992 (Bush Sr.'s term) were 0%, 1%, 2%, and 3% respectively, George H.W. Bush's mean GDP growth rate would be calculated as 
+          1.5. I then sorted them from highest to lowest for easy readability. <b>I would rate the honesty as 2</b>. I didn't do anything whacky here. I used the full dataset and calculated all the numbers honestly. </li>
+
+          <li>Overall Mean line: I also grouped by party to calculate the overall mean GDP growth rate of each party. Since the point of the visualization
+            is to compare GDP growth between parties, it makes sense to include the overall growth rates across parties instead of just between presidents. 
+            Before this, I had the overall mean GDP growth as a separate bar plot. However, I realized there was a way to include that information
+            in one plot by having these horizontal lines. By including all the information in one plot instead of two separate plots, it reduces cognitive effort and
+            allows the reader to directly compare the overall mean with each president's GDP growth without having to look at two separate plots.
+            Again, <b>I would rate the honesty as 2</b>. I used the full dataset and calculated all the numbers honestly.
+          </li>
+
+          <li>Title: I made the title font Times New Roman to match the typical font of newspaper articles. This gives it a sense of credibility. The font size is also
+            made really big so it immediately catches your eye. "Who's the Fiscal Conservative Now?" alludes to how the Republican party is typically associated with
+            fiscal conservatism and a stronger economy, but the data shows that the Democratic party has a higher mean GDP growth rate.
+
+            Notice how the title in both visualizations say "[political party] <b>Lead to Higher GDP Growth</b>", but neither of them do anything too deceptive with 
+            the data. They're just different in how one could interpret "Lead to Higher GDP Growth" and what data transformations I use to
+            calculate a "Higher GDP Growth". In here, "Higher GDP Growth" simply means "Higher mean annual GDP growth in the president's term".
+            And that's a fair interpretation! if GDP growth was high every year during that president's term, it would be fair to say that president
+            led America to have a "higher GDP growth". <b>I would rate the honesty at 1</b> because while it is a fair interpretation, there is at least one other possible
+            interpretation of "Lead to Higher GDP Growth" that I use in the second plot. Not to mention, <b>there are many other factors that affect GDP growth than
+            presidential policy.</b> This whole graph implies that these presidents were the main cause of GDP growth going up or down, which might not be true. 
+            There is also the fact that it only goes back to 1961, although that is the earliest data The World Bank has. 
+          </li>
+          <li>Takeaways and annotations: To further hammer the argument that Democrats lead to higher GDP growth, I made sure to explicitly write the key takeaways.
+            I experimented with putting takeaways outside the graph as subtitles, or in the graph itself as annotations. After showing the graph to two groups of friends,
+            I found that the annotations were much more effective at getting the point across. People tend to skip over reading the subtitle to go straight to the graph.
+            But by putting the takeaways as annotations inside the graph, their eyes are naturally drawn to read the annotations as they read through the graph.
+            <b>I rate the honesty as 1.5</b>. They are conclusions from the graph, and the graph itself is honest. However, again, there is at least one other
+            possible interpretation of "Lead to Higher GDP Growth", and there are many other factors that affect GDP growth than just presidential policy.
+          </li>
+          <li>Color: I colored the bars depending on if the president was Democrat or Republican so viewers could quickly distinguish if they were looking at a Dem or Rep 
+            president. The point of the visualization is to compare Dem and Rep presidents, after all. I also made sure to use blue for Democrats, red for Republicans. These two parties have always been associated with these colors so it makes sense to color them that way.
+            I made sure the blue used is the exact same RGB value as the blue on the Democratic logo, and the Red used is the exact same as on the Republican logo too.
+            The vertical dashed lines and their labels are colored the same but with less opacity to ensure they don't distract too much from the main bar plots.
+            Everything else is colored black or white-grayish to ensure maximum readability. <b>Honesty: 2</b>. No shenanigans. Blue for democrats, red for republicans.
+            As it always has been.
+          </li>
         </ul>
       </section>
 
@@ -175,8 +213,8 @@
         <h3>AGAINST the Proposition</h3>
 
         <figure>
-          <img src="IMAGE_FILENAME" alt="" />
-          <figcaption>BRIEF CAPTION HERE.</figcaption>
+          <img src="Proj_2\Change in GDP growth Rep.svg" alt="" />
+          <figcaption>Change in GDP growth between start and end of terms of each President (1963-2016)</figcaption>
         </figure>
 
         <p>Design Decisions and Rationale:</p>
